@@ -1,0 +1,362 @@
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #99ddff;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 100vw;
+    background: rgba(9, 45, 88, 0.7);
+    overflow-x: hidden;
+    max-width: 1500px;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    width: 100%;
+    opacity: 0.5;
+    
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.background{
+    /* background: #cccccc; */
+    background: rgba(9, 45, 88, 0.7);
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+    padding: 15px;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+
+
+
+.ave-image {
+    background: url(../images/pexels-inga-seliverstova-3413462.jpg) no-repeat center center fixed;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-text {
+    text-align: center;
+    font-size: 2em;
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+.kazu-image {
+    background: url(../images/pexels-inga-seliverstova-3413462.jpg) no-repeat center center fixed;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #99ddff;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+article, .sidebar-widget {
+    padding: 15px;
+    margin: 15px 0;
+}
+
+article > header {
+    background: rgba(9, 45, 88, 0);
+}
+
+img {
+    width: 100%;
+}
+
+i {
+    margin: 0 5px;
+}
+
+a:hover {
+    color: blue;
+    
+}
+
+td:nth-child(2) {
+    padding-left: 30px;
+}
+
+@media (min-width: 1000px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: row;
+    }
+    header li {
+        display: inline-block;
+    }
+
+    header h1, header nav {
+        flex: 1;
+    }
+
+    header h1 {
+        text-align: left;
+    }
+
+    header nav {
+        text-align: right;
+    }
+    /* blog */
+    .wrapper {
+        flex-direction: row;
+    }
+    
+    main {
+        flex: 3;
+    }
+    
+    aside {
+        flex: 1;
+        margin-left: 15px;
+    }
+    
+    article > header {
+        justify-content: space-between;
+    }
+}
+/*
+RECENT WORK SECTION
+*/
+
+.recent-work {
+    background: rgba(9, 45, 88, 0.7); 
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    
+}
+
+.recent-work-title {
+    font-size: 1.6rem;
+}
+
+.recent-work-info {
+    padding: 1rem;
+}
+
+.recent-work-info h4 {
+    font-size: 1.4rem;
+}
+.tools > li {
+    margin: 1rem 0;
+    
+}
+
+/*
+CONTACT US SECTION
+*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100vh;
+    background: #404040;
+    color:#ffebcc;   
+}
+
+.contact-heading {
+    margin: 0;
+    font-size: 5rem;   
+}
+
+.contact-text {
+    font-size: 3rem;
+    margin-bottom: 3rem;        
+}
+
+/*
+PROJECTS PAGE
+*/
+
+project-title {
+    font-size: 1.6rem;
+}
+
+#work1 {
+    grid-area: work1
+}
+
+#work2 {
+    grid-area: work2
+} 
+
+#work3 {
+    grid-area: work3
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-item {
+    margin-bottom: 1rem;
+    background: rgba(9, 45, 88, 0.7);
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden-text{
+    display: none;
+}
+
+.grid-item:hover > .hidden-text {
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    color: #99ddff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-item:hover img {
+    filter: brightness(0.4);
+    transform: scale(1.01);
+    opacity: 0.95M
+}
+
+@media (min-width: 860px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+    .rotate{
+        font-size: 5rem;
+    }
+    
+    header {
+        height: 100%;
+    }
+    .recent-work {
+        flex-direction: row;
+    }
+    
+    .recent-work-info {
+        flex: 1;
+        padding: 1rem;
+    }
+    .recent-work-image {
+        flex: 2;
+        border: rgba(9, 45, 88, 0.7);
+    }
+    .recent-work-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .move-right{
+        order: 1;
+    }
+    #contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+    
+    #contact .rotate {
+        display: block;
+    }
+    
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .grid-item {
+        flex-basis 45%;
+    }
+}
+
+.fade-in-custom {
+    opacity: 0;
+    animation: fadeIn 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.delay1 {
+    animation-delay: 0.5s;
+}
+
+.delay2 {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@media (min-width: 1000px) {
+    .projects {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repear(3, 1fr);
+        grid-gap: 20px;
+        grid-template-areas:
+        "work1 work1 work1"
+        "work2 work2 work2"
+        "work3 work3 work3"
+        ;
+    }
+    
+    .grid-item {
+        margin-bottom: 0;
+    }
+}
