@@ -34,6 +34,8 @@ function runScriptOne() {
 
         const mesh = new THREE.Mesh(geometry, material);
 
+        
+        /* YENGA
         for(let row=0; row<20; row++) {
             let yPos = row * (height + 0.05);
             let offset = -1;
@@ -49,7 +51,11 @@ function runScriptOne() {
                 offset++;
             }
         }
-
+        */
+        
+        const block = mesh.clone();
+        scene.add(block);
+        
         window.addEventListener( 'resize', resize, false);
 
         update();
